@@ -20,7 +20,8 @@ Gestión de la configuración y programación Python
 3. Consola (PowerShell / Terminal)
 
 ## Facultad FCyT de Concepción del Uruguay
-(https://lh3.googleusercontent.com/p/AF1QipO8tXDq2rVkMLf6VTpC0xp1F1sBSBJQGAJLEanM=s1360-w1360-h1020)
+
+![Imagen FCyT](/imagen/FCyT.jpg)
 
 ## Moodle FCyT
 https://campus.fcytcdelu.uader.edu.ar/?redirect=0
