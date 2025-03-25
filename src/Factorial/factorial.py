@@ -23,18 +23,21 @@ def factorial(num):
 # Verificar si se ha pasado un argumento
 if len(sys.argv) == 1:  # Si no se ha pasado ningún argumento
     # Solicitar el rango al usuario
-    rango = input("Por favor ingrese un rango entre '1-15': ")
+    rango = input("Ingrese un numero o un rango EJ: 4-8")
 else:
     rango = sys.argv[1]  # Si el rango fue pasado como argumento
 
 # Procesar el rango ingresado
 try:
-    desde, hasta = map(int, rango.split('-'))
-
-    # Limitar el valor de hasta a 15
-    if hasta > 15:
-        print("El valor máximo permitido es 15. Ajustando el rango.")
-        hasta = 15
+    # Si el rango comienza con '-', se asume un rango hasta el número
+    if rango.startswith('-'):
+        hasta = abs(int(rango[1:]))  # Convertir el número después del '-' en positivo
+        desde = 1  # El rango comienza desde 1
+    elif rango.endswith('-'):
+        desde = int(rango[:-1])  # El rango empieza en el número indicado
+        hasta = 60  # El rango termina en 60
+    else:
+        desde, hasta = map(int, rango.split('-'))
 
     # Verificar que el rango sea válido
     if desde > hasta:
@@ -44,7 +47,7 @@ try:
             print(f"Factorial de {num} es {factorial(num)}")
 
 except ValueError:
-    print("Error: El formato del rango es incorrecto. Debe ser 'desde-hasta' con números válidos.")
+    print("Ingrese un numero o un rango EJ: 4-8.")
 
 
 
