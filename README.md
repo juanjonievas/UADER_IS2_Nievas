@@ -1,4 +1,4 @@
-# Trabajo_Practico_1 UADE_IS2_Nievas
+# UADE_IS2_Nievas
 
 Gestión de la configuración y programación Python
 
