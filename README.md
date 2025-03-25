@@ -1,4 +1,4 @@
-# UADE_IS2_Nievas
+# UADER_IS2_Nievas
 
 Gestión de la configuración y programación Python
 
